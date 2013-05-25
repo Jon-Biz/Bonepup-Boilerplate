@@ -49,21 +49,21 @@ Implementation
 
 Bonepup initially takes an array of requests, along with an optional URL parameter.
 
-{url : "put your wordpress blogs URL here"
-,requests:
-[	'type':'pages'
-	,'number':
-	,'custom_fields':"Put,your,comma-delimited,custom fields,here"
-	]
-}
+    {url : "put your wordpress blogs URL here"
+    ,requests:
+    [	'type':'pages'
+    	,'number':
+    	,'custom_fields':"Put,your,comma-delimited,custom fields,here"
+    	]
+    }
 			
 On completion of all the initial requests, BonePup triggers a marrionette callback named Data.Ready. Hook things like the site render and reveal into this, and nothing will appear until it's ready:
 
-Data.Ready.on(function(){
+    Data.Ready.on(function(){
 
 	// do stuff with the data here
 	
-};
+    };
 
 Posts are accessible at [YOUR APP]Data.Posts
 
@@ -76,7 +76,7 @@ The collection Data.PageIndex is a flat stack of all the pages. It is a convenie
 
 Sort the pages by their custom_fields to filter them into different collections, for managing different groups of pages.
 
-//create product collection, menu collection
-Menu = new Data.PageCollection(Data.Pages.where({description:'menu'}));
-Products = new Data.PageCollection(Data.Pages.where({description: 'gallery'}));
+    //create product collection, menu collection
+    Menu = new Data.PageCollection(Data.Pages.where({description:'menu'}));
+    Products = new Data.PageCollection(Data.Pages.where({description: 'gallery'}));
 

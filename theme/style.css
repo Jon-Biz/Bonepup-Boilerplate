@@ -1,0 +1,177 @@
+/*
+Theme Name: Kate El-Bizri 0.1
+
+*/
+
+/* Reset default browser styles */
+@import url('styles/reset.css');
+
+/* Rebuild default browser styles */
+@import url('styles/rebuild.css');
+
+/* Import a basic layout */
+@import url('styles/2c-l.css');
+
+/* Basic WordPress Styles */
+@import url('styles/wp.css');
+
+
+body {
+        margin: 1.5em 15%;
+				font-family: Georgia, Serif;
+}
+
+/* =Header
+-------------------------------------------------------------- */
+
+#branding {
+        margin: 0 0 1.5em 0;
+}
+
+
+/* =Menu
+-------------------------------------------------------------- */
+
+#access {
+        margin: 0 0 1.5em 0;
+        overflow: auto;
+	      width:100%
+}
+.skip-link {
+        display: none;
+}
+.menu ul {
+        list-style: none;
+        margin: 0;
+				float:right;
+				
+}
+.menu ul ul {
+        display: none;
+}
+.menu li {
+				display:inline;
+}
+.menu a{				
+        display: block;
+        float: left;
+				padding: 0px 0px 0px 100px;
+}
+.menu a:link {text-decoration: none}
+.menu a:visited {text-decoration: none}
+.menu a:active {text-decoration: none}
+.menu a:hover {text-decoration: underline; color: red;}
+
+
+/* =Main Section
+-------------------------------------------------------------- */
+#main {
+	position:relative;
+}
+
+/* =Products List
+-------------------------------------------------------------- */
+#products {
+	left:0;
+	top:50px;
+}
+
+#products li a:link {text-decoration: none}
+#products li a:visited {text-decoration: none}
+#products li a:active {text-decoration: underline; color: red;}
+#products li a:hover {text-decoration: underline; color: red;}
+
+#products .page {
+
+}
+
+#products .children {
+	height: 0em;
+	overflow:hidden;
+}
+
+/* =Content
+-------------------------------------------------------------- */
+
+#primary {
+	position: absolute;
+	top:0px;
+	left:200px;
+	height:1000px;
+	width: 500px;
+}
+#content{
+	overflow:hidden;
+	height:800px;
+	position: relative;
+}
+#product-display{
+	overflow:hidden;
+	height:800px;
+	position:absolute;
+	left:0px;
+}
+
+#ruler {
+	position: absolute;
+	top:0;
+	height:2px;
+	overflow:hidden;
+	background-color:#E4E5E5;
+}
+
+.post {
+        margin:  0 0 3em 0;      
+}
+.entry-content, .entry-summary {
+        margin: 1.5em 0 0 0;
+}
+
+.image-box {
+	padding: 50px 0 0 0;
+	float:left;
+}
+
+.pointer {
+	background-color:#C33;
+	width:100%;
+	height:40px;
+	opacity:0;
+}
+
+.description{
+	position:absolute;
+	top:0;
+	opacity:0;
+}
+
+#description-box{
+	display:none;
+	position:relative;
+}
+/* =Navigation
+-------------------------------------------------------------- */
+
+.navigation {
+        margin: 0 0 1.5em 0;
+        overflow: auto;
+}
+
+
+/* =Widget Areas
+-------------------------------------------------------------- */
+
+.widget-area ul {
+        list-style: none;
+        margin-left: 0;
+}
+.widget-area ul ul {
+        list-style: disc;
+        margin-left: 1.1em;
+}
+.widget-area ul ul ul {
+        margin-left: 2.5em;
+}
+.widget-container {
+        margin: 0 0 1.5em 0;
+}

@@ -1,0 +1,162 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en-US">
+
+<head profile="http://gmpg.org/xfn/11">
+    <title>Kate Elbizri | This junk will be gone at some point</title>
+ 
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+ 	<script src="assets/js/libs/jquery.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+ 
+     
+    <meta name='robots' content='noindex,nofollow' />
+<link rel="alternate" type="application/rss+xml" title="Kate Elbizri &raquo; Wine List Comments Feed" href="http://localhost/?feed=rss2&#038;page_id=14" />
+<link rel='stylesheet' id='admin-bar-css'  href='http://localhost/wp-includes/css/admin-bar.css?ver=20111209' type='text/css' media='all' />
+
+<script type='text/javascript' src='http://localhost/wp-includes/js/comment-reply.js?ver=20090102'></script>
+
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://localhost/xmlrpc.php?rsd" />
+
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://localhost/wp-includes/wlwmanifest.xml" /> 
+
+<link rel='prev' title='a second page' href='http://localhost/?page_id=12' />
+
+<link rel='next' title='bottle2' href='http://localhost/?page_id=26' />
+<meta name="generator" content="WordPress 3.3.2" />
+<link rel='canonical' href='http://localhost/' />
+<style type="text/css" media="print">#wpadminbar { display:none; }</style>
+<style type="text/css" media="screen">
+	html { margin-top: 28px !important; }
+	* html body { margin-top: 28px !important; }
+</style>
+ 
+    <link rel="alternate" type="application/rss+xml" href="http://localhost/?feed=rss2" title="Kate Elbizri latest posts" />
+    <link rel="alternate" type="application/rss+xml" href="http://localhost/?feed=comments-rss2" title="Kate Elbizri latest comments" />
+    <link rel="pingback" href="http://localhost/xmlrpc.php" />
+</head>
+ 
+<body>
+<div id="wrapper" class="hfeed">
+    <div id="header">
+        <div id="masthead">
+ 
+             <div id="branding">
+                <div id="blog-title"><span><a href="http://localhost/" title="Kate Elbizri" rel="home">Kate Elbizri</a></span></div>
+
+                    <h1 id="blog-description">This junk will be gone at some point</h1>
+
+            </div><!-- #branding -->
+ 
+						<div id="access">
+						    <div class="skip-link"><a href="#content" title="Skip to content">Skip to content</a></div>
+						    <div class="menu">
+									<ul>
+										<li class="page_item page-item-45">
+											<a href="http://localhost/?page_id=45">Work</a>
+										</li>
+										<li class="page_item page-item-47">
+											<a href="http://localhost/?page_id=47">About</a>
+										</li>
+										<li class="page_item page-item-49"><a href="http://localhost/?page_id=49">Contact Kate</a></li></ul></div>
+
+						</div><!-- #access -->
+ 
+        </div><!-- #masthead -->
+    </div><!-- #header -->
+ 
+    <div id="main">
+
+<ul id="products">
+	<li class="page_item page-item-14 current_page_item">
+		<a href="http://localhost/">Wine List</a>
+		<ul class='children' >
+			<li class="page_item page-item-12">
+				<a href="http://localhost/?page_id=12">a second page</a>
+				</li>
+			<li class="page_item page-item-26">
+				<a href="http://localhost/?page_id=26">bottle2</a>
+				</li>
+			<li class="page_item page-item-29"><a href="http://localhost/?page_id=29">bottle3</a></li>
+		</ul>
+	</li>
+	
+	<li class="page_item page-item-60">
+		<a href="http://localhost/?page_id=60">Beverages</a>
+	</li>
+	
+	<li class="page_item page-item-62">
+		<a href="http://localhost/?page_id=62">Appetizers</a>
+	</li>
+	
+	<li class="page_item page-item-67">
+		<a href="http://localhost/?page_id=67">Entrees</a>
+	</li>
+	
+	<li class="page_item page-item-69">
+		<a href="http://localhost/?page_id=69">Desserts</a>
+	</li>
+
+</ul>
+
+
+<div id="content">
+
+ 	
+	
+	<a href="http://localhost/?page_id=29" title="bottle3">;</a><a href="http://localhost/?page_id=12" title="a second page"><img width="191" height="706" src="http://localhost/wp-content/uploads/2012/05/bottle1.jpg" class="attachment-post-thumbnail wp-post-image" alt="bottle1" title="bottle1" /></a>	
+	
+
+ 
+
+ 
+</div>
+
+
+
+  </div><!-- #main -->
+ 
+    <div id="footer">
+        <div id="colophon">
+ 
+            <div id="site-info">
+            </div><!-- #site-info -->
+ 
+        </div><!-- #colophon -->
+    </div><!-- #footer -->
+</div><!-- #wrapper -->
+<script>
+$().ready(function() {  			
+			
+			
+			// loop through products, add
+			$('#products .page_item').each(function(index, element){
+//					$(element).css('height', '1em');
+					var childs = $('ul.children',element);
+					$(childs).css('height','0em');
+					if(childs.children().length>0){
+						console.log("chidren is "+childs.children().length+" long.");
+						$(element).mouseover(function(){
+									length = childs.children().length;
+									console.log (childs.children().length+" long");
+								//	$(element).css('overflow','visible');
+									$(childs).css('height',(childs.children().length+2)+'em');
+						});
+						$(element).mouseout(function(){
+									length = childs.length;
+									console.log (childs.length+" long");
+									console.log(childs);
+									$(childs).css('height','0em');
+						});
+
+					}
+			
+
+			});
+
+
+});  
+</script>
+</body>
+
+</html>

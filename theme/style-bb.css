@@ -1,0 +1,51 @@
+/*
+Theme Name: Kate El-Bizri 0.1
+
+*/
+
+/* Reset default browser styles */
+@import url('styles/reset.css');
+
+
+/* Rebuild default browser styles */
+@import url('styles/rebuild.css');
+
+/* Import Font s*/
+
+body {
+}
+
+/* =Menu
+-------------------------------------------------------------- */
+
+#header {
+	overflow: auto;
+  width:900px;
+}
+#access {
+position: relative;
+left:0px;
+width:875px;
+}
+
+.skip-link {
+  display: none;
+}
+
+/* =Main Section
+-------------------------------------------------------------- */
+
+/* set main to relative so that sub elements are positioned relatively */
+#main {
+	position:relative;
+
+}
+
+#primary {
+}
+
+#secondary{	
+}
+
+#wrapper{
+}
